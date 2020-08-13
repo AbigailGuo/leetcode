@@ -15,7 +15,7 @@ def superEggDrop(K, N):
 
     # return dp[K][N]
 
-    # 根据dp的表的规律发现dp[i][j-k]递减, dp[i-1][k-1]递增, 当两者相等时应该是最优解 淦！
+    # 根据dp的表的规律发现dp[i][j-k]递减, dp[i-1][k-1]递增, 当两者相等时应该是最优解 
     dp = [[0]*(N+1) for _ in range(K+1)]
     for i in range(1, N+1):
         dp[1][i] = i
